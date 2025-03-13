@@ -1,0 +1,6 @@
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/UnboundedKnapsack.dir
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/BoundedKnapsack.dir
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/ZeroOneKnapsack.dir
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/Tests.dir
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,6 @@
+#ifndef UNBOUNDEDKNAPSACKTESTS_H
+#define UNBOUNDEDKNAPSACKTESTS_H
+
 #include <gtest/gtest.h>
 #include "UnboundedKnapsack.h"
 
@@ -139,8 +142,4 @@ TEST(UnboundedKnapsackTest, SmallestCase)
     EXPECT_EQ(knapsack.get_max_knapsack_bonus(), 1);
 }
 
-int main(int argc, char** argv)
-{
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
+#endif //UNBOUNDEDKNAPSACKTESTS_H

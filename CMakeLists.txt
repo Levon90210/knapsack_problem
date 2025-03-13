@@ -7,18 +7,17 @@ find_package(GTest REQUIRED)
 
 include_directories(include)
 
-set(SOURCE_FILES
-        src/main.cpp
-)
-
 set(TEST_FILES
-        tests/UnboundedKnapsackTests.cpp
+        tests/TestAll.cpp
 )
 
-add_executable(KnapsackProblem ${SOURCE_FILES})
+add_executable(UnboundedKnapsack src/UnboundedKnapsack.cpp)
+add_executable(BoundedKnapsack src/BoundedKnapsack.cpp)
+add_executable(ZeroOneKnapsack src/ZeroOneKnapsack.cpp)
 
 add_executable(Tests ${TEST_FILES})
 
 target_link_libraries(Tests PRIVATE GTest::GTest GTest::Main pthread)
 
 add_test(NAME UnboundedKnapsackTests COMMAND Tests)
+add_test(NAME BoundedKnapsackTests COMMAND Tests)

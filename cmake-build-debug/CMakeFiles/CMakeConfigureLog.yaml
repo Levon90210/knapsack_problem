@@ -542,3 +542,34 @@ events:
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils for Ubuntu) 2.42
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake:39 (find_dependency)"
+      - "/home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/FindGTest.cmake:197 (find_package)"
+      - "CMakeLists.txt:6 (find_package)"
+    directories:
+      source: "/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vz1HSY"
+      binary: "/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vz1HSY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vz1HSY'
+        
+        Run Build Command(s): /home/levon/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -v cmTC_05130
+        [1/2] /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fdiagnostics-color=always -o CMakeFiles/cmTC_05130.dir/src.c.o -c /home/levon/CLionProjects/KnapsackProblem/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-Vz1HSY/src.c
+        [2/2] : && /usr/bin/cc  -rdynamic CMakeFiles/cmTC_05130.dir/src.c.o -o cmTC_05130   && :
+        
+      exitCode: 0
+...
